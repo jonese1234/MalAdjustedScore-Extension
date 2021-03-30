@@ -1,0 +1,26 @@
+{
+    "name": "Mal Actual Score",
+    "description": "The actual score for mal",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting", "alarms"],
+    "host_permissions": ["https://myanimelist.net/"],
+
+    "content_scripts": [
+        {
+            "css": ["mal-top/mal-top.css"],
+            "js": ["mal-top/mal-top.js"],
+            "matches": ["https://myanimelist.net/topanime.php*"]
+        },
+        {
+            "css": ["mal-anime/mal-anime.css"],
+            "js": ["mal-anime/mal-anime.js"],
+            "matches": ["https://myanimelist.net/anime/*"]
+        }
+    ]
+
+    
+  }
