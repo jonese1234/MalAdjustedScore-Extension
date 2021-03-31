@@ -28,7 +28,7 @@ function GetCellValues() {
 
 function CalculateAdjustedScore(currentScore, result){
     var data = result['mal-data'];
-    var result = 5.5 + (((currentScore - data.mean)/data.standardDeviation) * (9*0.16666));
+    var result = 5 + (((currentScore - data.mean)/data.standardDeviation) * (10*0.16666));
     if(result < 1) return 1;
     if(result > 10) return 10;
     
