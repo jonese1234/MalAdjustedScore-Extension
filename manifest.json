@@ -1,13 +1,16 @@
 {
     "name": "Mal Adjusted Score",
-    "description": "This simple extension just give an adjusted score for all anime that makes it fall in line with a normal distribution whos center lies at 5.5 which is the middle between 1 and 10. ",
+    "description": "This simple extension just give an adjusted score for all anime that makes it fall in line with a normal distribution.",
     "version": "1.0.0",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": ["storage", "activeTab", "scripting", "alarms"],
+    "permissions": ["storage", "alarms"],
     "host_permissions": ["https://myanimelist.net/"],
+    "icons": {
+        "128": "imgs/icon128.png"
+    },
 
     "content_scripts": [
         {
