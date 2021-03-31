@@ -5,7 +5,7 @@ function run(){
         var adjustedScore = CalculateAdjustedScore(currentScore, result);
         var infoBlock = document.getElementsByClassName('information-block')[0];
         var span = document.createElement('span');
-        span.innerHTML = `<a href="https://jonesy.moe">Adjusted Score: ${adjustedScore}</a>`;
+        span.innerHTML = `<a href="https://github.com/jonese1234/MalAdjustedScore-Extension">Adjusted Score: ${adjustedScore}</a>`;
         span.classList.add('information');
         span.classList.add('type');
         infoBlock.appendChild(span)
